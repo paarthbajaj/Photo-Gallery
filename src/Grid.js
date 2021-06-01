@@ -1,8 +1,9 @@
 import React from "react";
 import useFirestore from "./useFirestore";
 
+// this will cycle through documents and output each image
 const ImageGrid = ({ setSelectedImage }) => {
-  const { docs } = useFirestore("images");
+  const { docs } = useFirestore("images"); //this is going to listen to the collection in database and return all the docs we have
 
   return (
     <div className="imageGrid">
